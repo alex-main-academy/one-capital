@@ -1,0 +1,52 @@
+body {
+    position: relative;
+    z-index: 2;
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+    background-color: #04080B;
+    padding-top: 34px;
+    letter-spacing: 0.01em;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1090px;
+    padding: 0 15px;
+}
+
+.shadow-1 {
+    position: absolute;
+    z-index: 1;
+    width: 507px;
+    height: 507px;
+    left: -74px;
+    top: -159px;
+
+    background: #372C65;
+    filter: blur(392.5px);
+}
+
+.shadow-2 {
+    position: absolute;
+    z-index: 1;
+    width: 479px;
+    height: 479px;
+    right: -60px;
+    top: 151px;
+
+    background: #5C518D;
+    filter: blur(392.5px);
+}
+
+.shadow-3 {
+    position: absolute;
+    z-index: 1;
+    width: 292px;
+    height: 292px;
+    right: 0;
+    top: 323px;
+
+    background: #372C65;
+    filter: blur(392.5px);
+}
