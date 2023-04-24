@@ -1,0 +1,124 @@
+.ticket {
+    padding-top: 67px;
+    padding-bottom: 215px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ticket__title {
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 1.23;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.ticket__desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    margin-bottom: 58px;
+}
+
+.ticket__text {
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    span {
+        font-weight: 400;
+        line-height: 1;
+        margin-left: 8px;
+        font-size: 24px;
+    }
+}
+
+.ticket__icon {
+    display: block;
+    margin-right: 13px;
+}
+
+.ticket__portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.portfolio {
+    margin-bottom: 122px;
+}
+
+.portfolio__title {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.portfolio__list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.portfolio__link {
+    display: block;
+    padding: 19px 31px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 2px solid rgba(76, 97, 209, 0.16);
+    border-radius: 30px;
+
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.portfolio__more {
+    padding: 19px 31px;
+    background: var(--button-back-color);
+    border: 2px solid rgba(76, 97, 209, 0.16);
+    border-radius: 30px;
+
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.ticket__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 134px;
+}
+
+.ticket__image {
+    margin-left: 18px;
+}
+
+.ticket__subtitle {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.35;
+    letter-spacing: 0.02em;
+    margin-top: 45px;
+    margin-bottom: 26px;
+}
+
+.ticket__apply {
+    display: inline-block;
+    padding: 19px 31px;
+    background: var(--button-back-color);
+    border: 2px solid rgba(76, 97, 209, 0.16);
+    border-radius: 30px;
+
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
