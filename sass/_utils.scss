@@ -18,4 +18,12 @@ body {
     margin: 0 auto;
     max-width: 1110px;
     padding: 0 15px;
+
+    @media screen and (max-width:1110px) {
+        max-width: 690px;
+    }
+
+    @media screen and (max-width:767px) {
+        max-width: 320px;
+    }
 }

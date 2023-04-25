@@ -9,6 +9,16 @@
     }
 }
 
+.header__menu {
+    display: none;
+    width: 32px;
+    height: 32px;
+
+    @media screen and (max-width:1110px) {
+        display: block;
+    }
+}
+
 .header__logo {
     height: 75px;
     display: flex;
@@ -17,6 +27,11 @@
 
     padding-right: 34px;
     border-right: 1px solid rgba(255, 255, 255, 0.06);
+
+    @media screen and (max-width:1110px) {
+        border: none;
+        padding-right: 0;
+    }
 }
 
 .header__nav {
@@ -24,6 +39,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width:1110px) {
+        display: none;
+    }
 }
 
 .nav__list {
@@ -54,4 +73,8 @@
     height: 75px;
     padding-left: 52px;
     border-left: 1px solid rgba(255, 255, 255, 0.06);
+
+    @media screen and (max-width:1110px) {
+        display: none;
+    }
 }

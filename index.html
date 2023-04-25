@@ -14,6 +14,9 @@
 <body>
     <header class="header">
         <div class="container">
+            <button class="header__menu js-menu-open">
+                <img src="img/icons/burger.svg" alt="burger" width="32" height="32">
+            </button>
             <a class="header__logo">
                 <img src="img/section/header/logo.svg" alt="logo" width="164" height="29">
             </a>
@@ -148,7 +151,55 @@
                         <a href="#" class="nav__link">Blog</a>
                     </li>
                     <li class="nav__item">
-                        <a href="mailto:test.email@gmail.com" class="nav__link">test.email@gmail.com</a>
+                        <a href="mailto:test.email@gmail.com" class="nav__link nav__link_email">test.email@gmail.com</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__social social">
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/icons/instagram.svg" alt="instagram logo" class="social__icon" width="24"
+                            height="24">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/icons/facebook.svg" alt="facebook logo" class="social__icon" width="24"
+                            height="24">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/icons/telegram.svg" alt="telegram logo" class="social__icon" width="24"
+                            height="24">
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__copy">©️OneCapital</p>
+        </div>
+        <div class="footer__mobile">
+            <a class="footer__logo">
+                <img src="img/section/footer/logo.svg" alt="logo" width="145" height="27">
+            </a>
+            <nav class="footer__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Apply To Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="mailto:test.email@gmail.com" class="nav__link nav__link_email">test.email@gmail.com</a>
                     </li>
                 </ul>
             </nav>
@@ -205,8 +256,54 @@
         </div>
     </div>
 
+    <div class="menu js-menu">
+        <div class="menu__header">
+            <div class="menu__header_container">
+                <button class="menu__close js-menu-close">
+                    <img src="img/icons/close.svg" alt="close icon" width="32" height="32">
+                </button>
+                <img src="img/section/header/logo.svg" class="menu__logo" alt="logo" width="211" height="35">
+            </div>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="#" class="menu__link active">Home</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">About Us</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Portfolio</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Apply To Us</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Blog</a>
+            </li>
+        </ul>
+        <ul class="menu__social">
+            <li>
+                <a href="#">
+                    <img src="img/icons/instagram.svg" alt="instagram" class="menu__social_icon" width="24" height="24">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/icons/facebook.svg" alt="facebook" class="menu__social_icon" width="24" height="24">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/icons/telegram.svg" alt="telegram" class="menu__social_icon" width="24" height="24">
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <script defer src="js/main.js"></script>
     <script defer src="js/modal.js"></script>
+    <script defer src="js/menu.js"></script>
 </body>
 
 </html>

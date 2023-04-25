@@ -26,6 +26,10 @@
     line-height: 1;
     font-weight: 400;
     margin-bottom: 13px;
+
+    @media screen and (max-width:1110px) {
+        font-size: 50px;
+    }
 }
 
 .hero__title span {
@@ -41,10 +45,21 @@
         height: 10px;
         background-color: #2E46C2;
     }
+
+    @media screen and (max-width:1110px) {
+        &::before {
+            bottom: 20px;
+            height: 7px;
+        }
+    }
 }
 
 .hero__desc {
     font-size: 32px;
     line-height: 1.28;
     max-width: 474px;
+
+    @media screen and (max-width:1110px) {
+        font-size: 24px;
+    }
 }
