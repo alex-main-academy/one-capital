@@ -12,6 +12,10 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+
+    @media screen and (max-width:767px) {
+        background-image: url(../img/bg-mob.jpg);
+    }
 }
 
 .container {
