@@ -1,6 +1,6 @@
 .ticket {
-    padding-top: 67px;
-    padding-bottom: 215px;
+    padding-top: 42px;
+    padding-bottom: 81px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     gap: 64px;
-    margin-bottom: 58px;
+    margin-bottom: 60px;
 }
 
 .ticket__text {
@@ -42,42 +42,88 @@
     margin-right: 13px;
 }
 
-.ticket__portfolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
-
+// portfolio
 .portfolio {
-    margin-bottom: 122px;
-}
-
-.portfolio__title {
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .portfolio__list {
     display: flex;
-    align-items: center;
-    gap: 25px;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.portfolio__link {
-    display: block;
-    padding: 19px 31px;
+.portfolio__item {
+    &:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 54px;
+        padding-right: 99px;
+        width: 330px;
+    }
+
+    &:nth-child(2) {
+        width: 365px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 42px;
+        padding-bottom: 54px;
+        border-left: 1px solid rgba(255, 255, 255, 0.06);
+        border-right: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    &:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 54px;
+        padding-left: 118px;
+        width: 330px;
+    }
+}
+
+.portfolio__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 0.88;
+    margin-bottom: 46px;
+}
+
+.portfolio__logo {
+    margin-bottom: 42px;
+}
+
+.portfolio__button {
+    padding: 16px 31px;
     background: rgba(255, 255, 255, 0.02);
-    border: 2px solid rgba(76, 97, 209, 0.16);
+    border: 2px solid #4C61D1;
     border-radius: 30px;
 
+    font-family: var(--primary-font);
     font-size: 24px;
     line-height: 1;
     letter-spacing: 0.02em;
 }
 
-.portfolio__more {
+// portfolio
+
+.ticket__see {
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    margin-bottom: 90px;
+}
+
+.ticket__see_button {
+    display: inline-block;
+    margin-top: 33px;
+    margin-bottom: 35px;
+
     padding: 19px 31px;
     background: var(--button-back-color);
     border: 2px solid rgba(76, 97, 209, 0.16);

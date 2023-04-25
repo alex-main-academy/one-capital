@@ -68,38 +68,43 @@
         </section>
 
         <section class="ticket">
+            <h2 class="ticket__title">Avarage Ticket</h2>
+            <div class="ticket__desc">
+                <p class="ticket__text">
+                    <img src="img/section/ticket/coin.png" alt="money" class="ticket__icon" width="40" height="40">
+                    30k-100k
+                    <span>pre-seed / startups</span>
+                </p>
+                <p class="ticket__text">
+                    <img src="img/section/ticket/coin.png" alt="money" class="ticket__icon" width="40" height="40">
+                    50k-200k CP
+                    <span>/ existing business</span>
+                </p>
+            </div>
+            <div class="ticket__portfolio portfolio">
+                <ul class="portfolio__list">
+                    <li class="portfolio__item">
+                        <img src="img/section/ticket/nervous-academy-logo.svg" alt="nervous-academy-logo" width="78"
+                            height="82" class="portfolio__logo">
+                        <button class="portfolio__button js-open-modal">Nervous Academy</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <h2 class="portfolio__title">Portfolio</h2>
+                        <img src="img/section/ticket/7leads-logo.svg" alt="7leads-logo" width="81" height="81"
+                            class="portfolio__logo">
+                        <button class="portfolio__button js-open-modal">7 Leads</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <img src="img/section/ticket/ogo-logo.svg" alt="ogo-logo" width="118" height="65"
+                            class="portfolio__logo">
+                        <button class="portfolio__button js-open-modal">Ogo Mart</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="ticket__see">
+                <a href="#" class="ticket__see_button">See More</a>
+            </div>
             <div class="container">
-                <h2 class="ticket__title">Avarage Ticket</h2>
-                <div class="ticket__desc">
-                    <p class="ticket__text">
-                        <img src="img/section/ticket/coin.png" alt="money" class="ticket__icon" width="40" height="40">
-                        30k-100k
-                        <span>pre-seed / startups</span>
-                    </p>
-                    <p class="ticket__text">
-                        <img src="img/section/ticket/coin.png" alt="money" class="ticket__icon" width="40" height="40">
-                        50k-200k CP
-                        <span>/ existing business</span>
-                    </p>
-                </div>
-                <div class="ticket__portfolio portfolio">
-                    <p class="portfolio__title">Portfolio</p>
-                    <ul class="portfolio__list">
-                        <li class="portfolio__item">
-                            <button class="portfolio__link">Logo 1</button>
-                        </li>
-                        <li class="portfolio__item">
-                            <button class="portfolio__link">Logo 2</button>
-                        </li>
-                        <li class="portfolio__item">
-                            <button class="portfolio__link">Logo 3</button>
-                        </li>
-                        <li class="portfolio__item">
-                            <button class="portfolio__link">Logo 4</button>
-                        </li>
-                    </ul>
-                    <a href="#" class="portfolio__more">See More</a>
-                </div>
                 <div class="ticket__content">
                     <img src="img/section/ticket/men.webp" alt="men" class="ticket__image" width="318" height="361">
                     <div>
@@ -171,11 +176,37 @@
         </div>
     </footer>
 
-    <!-- <div class="shadow-1"></div>
-    <div class="shadow-2"></div>
-    <div class="shadow-3"></div> -->
+    <div class="backdrop js-backdrop">
+        <div class="modal">
+            <button class="modal__close js-close-modal">
+                <img src="img/icons/close.svg" alt="close icon" width="30" height="30">
+            </button>
+            <h3 class="modal__title">Next & Co</h3>
+            <p class="modal__desc">At the moment, we keep our team in secret, The team is constantly developing and
+                supplemented by new experts.</p>
+            <ul class="modal__info">
+                <li>
+                    <p class="modal__info_title">Web</p>
+                    <a href="#" class="modal__web">next&co.com</a>
+                </li>
+                <li>
+                    <p class="modal__info_title">Country</p>
+                    <img src="img/icons/country.png" alt="country icon" class="modal__country" width="36" height="31">
+                </li>
+                <li>
+                    <p class="modal__info_title">Sector</p>
+                    <p class="modal__sector">Consumer Goods & Services</p>
+                </li>
+            </ul>
+            <div class="modal__status">
+                <p class="modal__status_title">Status</p>
+                <p class="modal__status_text">Consumer Goods & Services</p>
+            </div>
+        </div>
+    </div>
 
     <script defer src="js/main.js"></script>
+    <script defer src="js/modal.js"></script>
 </body>
 
 </html>
