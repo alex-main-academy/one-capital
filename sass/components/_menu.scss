@@ -30,6 +30,10 @@
     align-items: center;
     max-width: 660px;
     margin: 0 auto;
+
+    @media screen and (max-width:767px) {
+        max-width: 320px;
+    }
 }
 
 .menu__close {

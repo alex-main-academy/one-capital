@@ -32,6 +32,13 @@
         border: none;
         padding-right: 0;
     }
+
+    @media screen and (max-width:767px) {
+        & img {
+            width: 211px;
+            height: 35px;
+        }
+    }
 }
 
 .header__nav {

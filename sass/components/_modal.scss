@@ -22,6 +22,11 @@
     border-radius: 30px;
     width: 593px;
     padding: 61px 61px 52px 61px;
+
+    @media screen and (max-width:767px) {
+        width: 320px;
+        padding: 56px 30px 46px 36px;
+    }
 }
 
 .modal__close {
@@ -30,6 +35,11 @@
     right: 46px;
     width: 30px;
     height: 30px;
+
+    @media screen and (max-width:767px) {
+        top: 36px;
+        right: 30px;
+    }
 }
 
 .modal__title {
@@ -39,6 +49,11 @@
     line-height: 1.03;
     letter-spacing: 0.02em;
     margin-bottom: 14px;
+
+    @media screen and (max-width:767px) {
+        line-height: 1.09;
+        margin-bottom: 22px;
+    }
 }
 
 .modal__desc {
@@ -49,6 +64,10 @@
     color: #DDDDDD;
     max-width: 436px;
     margin-bottom: 14px;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 22px;
+    }
 }
 
 .modal__info {
@@ -56,6 +75,32 @@
     align-items: flex-start;
     gap: 35px;
     margin-bottom: 12px;
+
+    @media screen and (max-width:767px) {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+}
+
+.modal__item {
+    &:nth-child(1) {
+        width: 100%;
+        margin-bottom: 36px;
+    }
+
+    &:nth-child(2) {
+        margin-bottom: 21px;
+        width: 100%;
+    }
+
+    &:nth-child(3) {
+        width: 50%;
+    }
+
+    &:nth-child(4) {
+        width: 50%;
+        margin-bottom: 36px;
+    }
 }
 
 .modal__info_title {
@@ -64,6 +109,10 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 10px;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 19px;
+    }
 }
 
 .modal__web {
@@ -77,6 +126,10 @@
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width:767px) {
+        width: 100%;
+    }
 }
 
 .modal__sector {
@@ -89,6 +142,18 @@
 .modal__status {
     max-width: 265px;
     margin-left: auto;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+
+.modal__status_mobile {
+    display: none;
+
+    @media screen and (max-width:767px) {
+        display: block;
+    }
 }
 
 .modal__status_title {
@@ -97,6 +162,10 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 9px;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 19px;
+    }
 }
 
 .modal__status_text {

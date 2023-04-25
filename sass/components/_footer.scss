@@ -40,11 +40,11 @@
     @media screen and (max-width:1110px) {
         padding-right: 0;
         border: none;
-        margin-bottom: 38px;
+        margin-bottom: 36px;
 
         & img {
-            width: 220px;
-            height: 40px;
+            width: 211px;
+            height: 35px;
         }
     }
 }
@@ -63,6 +63,7 @@
     .nav__link {
         @media screen and (max-width:1110px) {
             font-size: 22px;
+            line-height: 1;
         }
     }
 
