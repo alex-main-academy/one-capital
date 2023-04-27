@@ -768,7 +768,7 @@ body {
   background-color: #04080B;
   background-image: url(../img/section/menu/bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   padding-top: 33px;
   display: flex;
