@@ -1282,6 +1282,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: #04080B;
+  background-image: url(../img/section/menu/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   padding-top: 33px;
   display: flex;
   flex-direction: column;
