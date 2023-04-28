@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Apply To Us</title>
     <link rel="shortcut icon" type="image/x-icon" href="">
     <link rel="icon" sizes="any" type="image/svg+xml" href="">
     <link rel="stylesheet" href="css/index.css">
@@ -26,13 +26,13 @@
                         <a href="../index.html" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link active">About Us</a>
+                        <a href="../about/index.html" class="nav__link">About Us</a>
                     </li>
                     <li class="nav__item">
                         <a href="../portfolio/index.html" class="nav__link">Portfolio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../apply/index.html" class="nav__link">Apply To Us</a>
+                        <a class="nav__link active">Apply To Us</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">Blog</a>
@@ -45,84 +45,49 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="apply">
             <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__title">About Us</h1>
-                    <p class="hero__desc">OneCapital is a private investment fund from Ukraine. We unite the mutual
-                        assets of investors and founders of the largest Ukrainian companies in various fields of
-                        business.</p>
-                </div>
-                <img src="img/section/hero/bg.webp" alt="people" class="hero__image" width="329" height="373">
+                <h1 class="apply__title">Apply To Us</h1>
+                <p class="apply__desc">To apply, fill out the form below or go to our</p>
+                <a href="#" class="apply__link_item">Telegram <img src="img/icons/telegram.svg" alt="telegram logo"
+                        width="19" height="19"></a>
             </div>
         </section>
 
-        <section class="exp">
+        <section class="contact">
             <div class="container">
-                <h2 class="exp__title">We have vast experience of working with projects in following areas</h2>
-                <ul class="exp__list">
-                    <li class="exp__item">
-                        <img src="img/icons/it.svg" alt="IT" width="44" height="44" class="exp__icon">
-                        <h3 class="exp__subtitle">IT</h3>
-                    </li>
-                    <li class="exp__item">
-                        <img src="img/icons/marketing.svg" alt="Affiliate Marketing" width="44" height="44"
-                            class="exp__icon">
-                        <h3 class="exp__subtitle">Affiliate Marketing </h3>
-                    </li>
-                    <li class="exp__item">
-                        <img src="img/icons/e-commerce.svg" alt="E-Commerce" width="44" height="44" class="exp__icon">
-                        <h3 class="exp__subtitle">E -Commerce </h3>
-                    </li>
-                    <li class="exp__item">
-                        <img src="img/icons/real-estate.svg" alt="Real estate" width="44" height="44" class="exp__icon">
-                        <h3 class="exp__subtitle">Real estate</h3>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="looking">
-            <div class="container">
-                <h2 class="looking__title">Who are we looking for <span>Projects which:</span></h2>
-                <ul class="looking__list">
-                    <li class="looking__item">
-                        <p class="looking__desk">Have a constant business model</p>
-                    </li>
-                    <li class="looking__item">
-                        <p class="looking__desk">Want to expand, develop, enter new markets</p>
-                    </li>
-                    <li class="looking__item">
-                        <p class="looking__desk">Have positive dynamics of financial results</p>
-                    </li>
-                    <li class="looking__item">
-                        <p class="looking__desk">Are looking for capital and an investor that can help the project in
-                            its development</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="offer">
-            <div class="container">
-                <img src="img/section/offer/men.webp" alt="men" width="254" height="282" class="offer__image">
-                <div class="offer__content">
-                    <h2 class="offer__title">We Offer</h2>
-                    <ul class="offer__list">
-                        <li class="offer__item">
-                            <p class="offer__text">Expertise in fields of analytics and management</p>
-                        </li>
-                        <li class="offer__item">
-                            <p class="offer__text">Technical and operational support</p>
-                        </li>
-                        <li class="offer__item">
-                            <p class="offer__text">Funds for your project</p>
-                        </li>
-                        <li class="offer__item">
-                            <p class="offer__text"> Expertise in marketing and promotion</p>
-                        </li>
-                    </ul>
-                </div>
+                <form class="contact__form">
+                    <div class="form__block">
+                        <label class="form__label">
+                            <span>Company Name</span>
+                            <input type="text" class="form__input">
+                        </label>
+                        <label class="form__label">
+                            <span>Founders Name</span>
+                            <input type="text" class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__block">
+                        <label class="form__label">
+                            <span>Contact Number</span>
+                            <input type="tel" class="form__input">
+                        </label>
+                        <label class="form__label">
+                            <span>Company’s Website</span>
+                            <input type="text" class="form__input">
+                        </label>
+                    </div>
+                    <label class="form__label js-form-block">
+                        <span>Attach Files</span>
+                        <input type="file" class="form__input input__file js-input-file">
+                    </label>
+                    <label class="form__label">
+                        <span>Company Description</span>
+                        <textarea class="form__text"></textarea>
+                    </label>
+                    <button type="submit" class="form__submit">Send</button>
+                </form>
+                <img src="img/section/contact/people.webp" alt="people" class="contact__image" width="317" height="359">
             </div>
         </section>
     </main>
@@ -138,13 +103,13 @@
                         <a href="../index.html" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link active">About Us</a>
+                        <a href="../about/index.html" class="nav__link">About Us</a>
                     </li>
                     <li class="nav__item">
                         <a href="../portfolio/index.html" class="nav__link">Portfolio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../apply/index.html" class="nav__link">Apply To Us</a>
+                        <a class="nav__link active">Apply To Us</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">Blog</a>
@@ -178,7 +143,7 @@
         </div>
         <div class="footer__mobile">
             <a href="../index.html" class="footer__logo">
-                <img src="img/section/footer/logo.svg" alt="logo" width="164" height="29">
+                <img src="img/section/footer/logo.svg" alt="logo" width="145" height="27">
             </a>
             <nav class="footer__nav nav">
                 <ul class="nav__list">
@@ -186,13 +151,13 @@
                         <a href="../index.html" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link active">About Us</a>
+                        <a href="../about/index.html" class="nav__link">About Us</a>
                     </li>
                     <li class="nav__item">
                         <a href="../portfolio/index.html" class="nav__link">Portfolio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../apply/index.html" class="nav__link">Apply To Us</a>
+                        <a class="nav__link active">Apply To Us</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">Blog</a>
@@ -240,13 +205,13 @@
                 <a href="../index.html" class="menu__link">Home</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link active">About Us</a>
+                <a href="../about/index.html" class="menu__link">About Us</a>
             </li>
             <li class="menu__item">
                 <a href="../portfolio/index.html" class="menu__link">Portfolio</a>
             </li>
             <li class="menu__item">
-                <a href="../apply/index.html" class="menu__link">Apply To Us</a>
+                <a class="menu__link active">Apply To Us</a>
             </li>
             <li class="menu__item">
                 <a href="#" class="menu__link">Blog</a>
@@ -271,5 +236,8 @@
         </ul>
     </div>
 
+    <script defer src="js/main.js"></script>
     <script defer src="js/menu.js"></script>
 </body>
+
+</html>
