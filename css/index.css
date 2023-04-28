@@ -308,7 +308,7 @@ body {
 .hero__content {
   width: 100%;
   padding-top: 133px;
-  padding-bottom: 155px;
+  padding-bottom: 55px;
   max-width: 700px;
   border-right: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -389,6 +389,12 @@ body {
   max-width: 474px;
 }
 
+.hero__desc_second {
+  margin-top: 18px;
+  transition-duration: 500ms;
+  opacity: 0;
+}
+
 @media screen and (max-width: 1110px) {
   .hero__desc {
     font-size: 24px;
@@ -399,6 +405,10 @@ body {
   .hero__desc {
     font-size: 26px;
     max-width: 310px;
+  }
+
+  .hero__desc_second {
+    display: none;
   }
 }
 
