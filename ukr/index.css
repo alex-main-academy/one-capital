@@ -111,24 +111,24 @@ a {
 }
 
 @font-face {
-  font-family: "Khand";
-  src: url("../fonts/Khand/Khand-Regular.ttf");
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Khand";
-  src: url("../fonts/Khand/Khand-Medium.ttf");
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Medium.ttf");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Khand";
-  src: url("../fonts/Khand/Khand-SemiBold.ttf");
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.ttf");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
@@ -146,7 +146,7 @@ a {
   --primary-text-color: #FFFFFF;
   --accent-text-color: #73DEF1;
   --button-back-color: #2E46C2;
-  --primary-font: "Khand";
+  --primary-font: "OpenSans";
   --secondary-font: "Rubik";
 }
 
@@ -196,7 +196,6 @@ body {
 }
 
 .header .container {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -376,7 +375,7 @@ body {
 .hero__content {
   width: 100%;
   padding-top: 133px;
-  padding-bottom: 55px;
+  padding-bottom: 102px;
   max-width: 700px;
   border-right: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -395,15 +394,23 @@ body {
   margin-top: 41px;
 }
 
+@media screen and (max-width:1110px) {
+  .hero__image {
+    width: 250px;
+    height: 300px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero__image {
     margin-top: 0;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
 .hero__title {
-  font-size: 72px;
+  font-size: 64px;
   line-height: 1;
   font-weight: 400;
   margin-bottom: 13px;
@@ -411,13 +418,13 @@ body {
 
 @media screen and (max-width: 1110px) {
   .hero__title {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .hero__title {
-    font-size: 64px;
+    font-size: 50px;
     margin-bottom: 18px;
   }
 }
@@ -430,7 +437,7 @@ body {
   content: "";
   position: absolute;
   z-index: -1;
-  bottom: 29px;
+  bottom: 5px;
   left: 0;
   width: 100%;
   height: 10px;
@@ -439,7 +446,7 @@ body {
 
 @media screen and (max-width: 1110px) {
   .hero__title span::before {
-    bottom: 20px;
+    bottom: 7px;
     height: 7px;
   }
 }
@@ -447,7 +454,9 @@ body {
 @media screen and (max-width: 767px) {
   .hero__title span::before {
     height: 10px;
-    bottom: 22px;
+    bottom: 8px;
+    width: 264px;
+    left: -74px;
   }
 }
 
@@ -465,7 +474,7 @@ body {
 
 @media screen and (max-width: 1110px) {
   .hero__desc {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -502,17 +511,19 @@ body {
 }
 
 .priority__title {
-  padding: 147px 238px 218px 0;
+  padding: 147px 151px 218px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.06);
   font-weight: 400;
-  font-size: 52px;
+  font-size: 48px;
   line-height: 1.23;
+  max-width: 470px;
 }
 
 @media screen and (max-width: 1110px) {
   .priority__title {
     padding: 90px 40px 150px 0;
-    font-size: 45px;
+    font-size: 37px;
+    max-width: 250px;
   }
 }
 
@@ -583,13 +594,13 @@ body {
 
 @media screen and (max-width: 1110px) {
   .priority__text {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .priority__text {
-    font-size: 35px;
+    font-size: 32px;
     line-height: 1;
   }
 }
@@ -623,7 +634,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .ticket__title {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1;
     margin-bottom: 40px;
   }
@@ -666,13 +677,13 @@ body {
 
 @media screen and (max-width: 1110px) {
   .ticket__text {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .ticket__text {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
@@ -686,6 +697,12 @@ body {
 @media screen and (max-width: 1110px) {
   .ticket__text span {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ticket__text span {
+    font-size: 17px;
   }
 }
 
@@ -824,7 +841,7 @@ body {
   border: 2px solid rgba(76, 97, 209, 0.1);
   border-radius: 30px;
   font-family: var(--primary-font);
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1;
   letter-spacing: 0.02em;
   transition-duration: 300ms;
@@ -841,7 +858,7 @@ body {
 
 @media screen and (max-width: 1110px) {
   .portfolio__button {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
@@ -1110,7 +1127,7 @@ body {
 }
 
 .footer__nav .nav__list {
-  gap: 38px;
+  gap: 48px;
 }
 
 @media screen and (max-width: 1110px) {

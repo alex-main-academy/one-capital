@@ -6,6 +6,7 @@ openMenuButton.addEventListener("click", () => {
   menuElement.style.cssText = `
         opacity: 1;
         transform: translate(0);
+        z-index: 1000;
     `;
   document.body.style.overflowY = "hidden";
 });
