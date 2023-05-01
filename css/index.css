@@ -753,13 +753,22 @@ body {
 
 .portfolio__button {
   padding: 16px 31px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 2px solid #4C61D1;
+  border: 2px solid rgba(76, 97, 209, 0.1);
   border-radius: 30px;
   font-family: var(--primary-font);
   font-size: 24px;
   line-height: 1;
   letter-spacing: 0.02em;
+  transition-duration: 300ms;
+}
+
+.portfolio__button:hover {
+  background: rgba(255, 255, 255, 0.02);
+  border: 2px solid rgba(76, 97, 209, 0.3);
+}
+
+.portfolio__button:focus {
+  border: 2px solid #4C61D1;
 }
 
 @media screen and (max-width: 1110px) {
@@ -798,7 +807,7 @@ body {
   margin-top: 33px;
   margin-bottom: 35px;
   padding: 19px 31px;
-  background: var(--button-back-color);
+  background-color: var(--button-back-color);
   border: 2px solid rgba(76, 97, 209, 0.16);
   border-radius: 30px;
   font-family: var(--primary-font);
@@ -806,6 +815,11 @@ body {
   font-size: 24px;
   line-height: 1;
   letter-spacing: 0.02em;
+  transition-duration: 300ms;
+}
+
+.ticket__see_button:hover {
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1110px) {
@@ -883,7 +897,7 @@ body {
 .ticket__apply {
   display: inline-block;
   padding: 19px 31px;
-  background: var(--button-back-color);
+  background-color: var(--button-back-color);
   border: 2px solid rgba(76, 97, 209, 0.16);
   border-radius: 30px;
   font-family: var(--primary-font);
@@ -891,6 +905,11 @@ body {
   font-size: 24px;
   line-height: 1;
   letter-spacing: 0.02em;
+  transition-duration: 300ms;
+}
+
+.ticket__apply:hover {
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1110px) {
@@ -1228,12 +1247,20 @@ body {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.02em;
+  color: #6079FF;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
   .modal__web {
     width: 100%;
   }
+}
+
+.modal__flags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .modal__sector {
@@ -1244,7 +1271,7 @@ body {
 }
 
 .modal__status {
-  max-width: 265px;
+  max-width: 272px;
   margin-left: auto;
 }
 

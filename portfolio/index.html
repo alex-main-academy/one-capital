@@ -60,47 +60,65 @@
                 <h2 class="sectors__title">Sectors</h2>
                 <ul class="sectors__list">
                     <li class="sectors__item">
-                        <h3 class="sectors__subtitle">Affiliate Marketing</h3>
+                        <button class="sectors__button js-sectors-button" data-title="Affiliate Marketing">
+                            <h3 class="sectors__subtitle">Affiliate Marketing</h3>
+                        </button>
                     </li>
                     <li class="sectors__item">
-                        <h3 class="sectors__subtitle">CPA</h3>
+                        <button class="sectors__button js-sectors-button" data-title="CPA">
+                            <h3 class="sectors__subtitle">CPA</h3>
+                        </button>
                     </li>
                     <li class="sectors__item">
-                        <h3 class="sectors__subtitle">Education</h3>
+                        <button class="sectors__button js-sectors-button" data-title="Education">
+                            <h3 class="sectors__subtitle">Education</h3>
+                        </button>
                     </li>
                     <li class="sectors__item">
-                        <h3 class="sectors__subtitle">E-commerce</h3>
+                        <button class="sectors__button js-sectors-button" data-title="E-commerce">
+                            <h3 class="sectors__subtitle">E-commerce</h3>
+                        </button>
                     </li>
                 </ul>
             </div>
         </section>
 
         <section class="market">
-            <div class="market__about">
-                <p class="market__text">B2B Marketplace that connects mediabuyers and customers in a single system</p>
-                <p class="market__text">More than 7,000 payed partnerships has been made using our platform</p>
+            <div class="market__about js-market-about">
+                <p class="market__text js-market-text">B2B Marketplace that connects mediabuyers and customers in a
+                    single system</p>
+                <p class="market__text js-market-text">More than 7,000 payed partnerships has been made using our
+                    platform</p>
             </div>
             <div class="container">
                 <ul class="market__list">
                     <li class="market__item">
                         <img src="img/section/market/nervous-academy-logo.svg" alt="nervous-academy-logo"
                             class="market__logo" width="64" height="67">
-                        <h3 class="market__subtitle">Nervous Academy</h3>
+                        <button class="js-open-modal market__button">
+                            <h3 class="market__subtitle">Nervous Academy</h3>
+                        </button>
                     </li>
                     <li class="market__item">
                         <img src="img/section/market/7leads-logo.svg" alt="7leads-logo" class=" market__logo" width="64"
                             height="64">
-                        <h3 class="market__subtitle">7 Leads</h3>
+                        <button class="js-open-modal market__button">
+                            <h3 class="market__subtitle">7 Leads</h3>
+                        </button>
                     </li>
                     <li class="market__item">
                         <img src="img/section/market/ogo-logo.svg" alt="ogo-logo" class="market__logo" width="118"
                             height="65">
-                        <h3 class="market__subtitle">Ogo Mart</h3>
+                        <button class="js-open-modal market__button">
+                            <h3 class="market__subtitle">Ogo Mart</h3>
+                        </button>
                     </li>
                     <li class="market__item">
                         <img src="img/section/market/beauti-logo.svg" alt="beauti-logo" class="market__logo" width="179"
                             height="43">
-                        <h3 class="market__subtitle">Beauti Queue</h3>
+                        <button class="js-open-modal market__button">
+                            <h3 class="market__subtitle">Beauti Queue</h3>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -251,7 +269,152 @@
         </ul>
     </div>
 
+    <div class="backdrop js-backdrop js-backdrop-nervous-academy">
+        <div class="modal">
+            <button class="modal__close js-close-modal">
+                <img src="img/icons/close.svg" alt="close icon" width="30" height="30">
+            </button>
+            <h3 class="modal__title">Nervous Academy</h3>
+            <p class="modal__desc">Nervous Academy is an educational project aimed at training and training specialists
+                in the field of arbitration traffic.</p>
+            <ul class="modal__info">
+                <li class="modal__item">
+                    <a href="https://nervous.academy" class="modal__web">Website</a>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__info_title">Country</p>
+                    <img src="img/icons/country-ukr.png" alt="country icon" class="modal__country" width="31"
+                        height="31">
+                </li>
+                <li class="modal__item">
+                    <p class="modal__info_title">Sector</p>
+                    <p class="modal__sector">Education</p>
+                </li>
+                <li class="modal__item modal__status_mobile">
+                    <p class="modal__status_title">Status</p>
+                    <p class="modal__status_text">Active</p>
+                </li>
+            </ul>
+            <div class="modal__status">
+                <p class="modal__status_title">Status</p>
+                <p class="modal__status_text">Active</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="backdrop js-backdrop js-backdrop-7-leads">
+        <div class="modal">
+            <button class="modal__close js-close-modal">
+                <img src="img/icons/close.svg" alt="close icon" width="30" height="30">
+            </button>
+            <h3 class="modal__title">7 Leads</h3>
+            <p class="modal__desc">7LEADS is a project in which an experienced team of specialists is engaged in the
+                generation of potential clients for product and production companies operating in the markets of the USA
+                and Europe.</p>
+            <ul class="modal__info">
+                <li class="modal__item">
+                    <a href="https://my.7leads.biz" class="modal__web">Website</a>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__info_title">Country</p>
+                    <div class="modal__flags">
+                        <img src="img/icons/country-ukr.png" alt="country icon" class="modal__country" width="31"
+                            height="31">
+                        <img src="img/icons/country-eu.png" alt="country icon" class="modal__country" width="36"
+                            height="36">
+                        <img src="img/icons/country-usa.png" alt="country icon" class="modal__country" width="36"
+                            height="36">
+                    </div>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__info_title">Sector</p>
+                    <p class="modal__sector">Affiliate Marketing</p>
+                </li>
+                <li class="modal__item modal__status_mobile">
+                    <p class="modal__status_title">Status</p>
+                    <p class="modal__status_text">Active (Rebranding)</p>
+                </li>
+            </ul>
+            <div class="modal__status">
+                <p class="modal__status_title">Status</p>
+                <p class="modal__status_text">Active (Rebranding)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="backdrop js-backdrop js-backdrop-ogo">
+        <div class="modal">
+            <button class="modal__close js-close-modal">
+                <img src="img/icons/close.svg" alt="close icon" width="30" height="30">
+            </button>
+            <h3 class="modal__title">Ogo Mart</h3>
+            <p class="modal__desc">OgoMart - An online store with a separate application available for download in the
+                App Store and Google Play</p>
+            <ul class="modal__info">
+                <li class="modal__item">
+                    <a href="https://ogomart.com.ua" class="modal__web">Website</a>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__info_title">Country</p>
+                    <img src="img/icons/country-ukr.png" alt="country icon" class="modal__country" width="31"
+                        height="31">
+                </li>
+                <li class="modal__item">
+                    <p class="modal__info_title">Sector</p>
+                    <p class="modal__sector">E-commerce</p>
+                </li>
+                <li class="modal__item modal__status_mobile">
+                    <p class="modal__status_title">Status</p>
+                    <p class="modal__status_text">Active</p>
+                </li>
+            </ul>
+            <div class="modal__status">
+                <p class="modal__status_title">Status</p>
+                <p class="modal__status_text">Active</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="backdrop js-backdrop js-backdrop-beauti">
+        <div class="modal">
+            <button class="modal__close js-close-modal">
+                <img src="img/icons/close.svg" alt="close icon" width="30" height="30">
+            </button>
+            <h3 class="modal__title">BeautiQueue</h3>
+            <p class="modal__desc">BeautiQueue - An online store featured on the popular Amazon and Shopify platforms.
+            </p>
+            <ul class="modal__info">
+                <li class="modal__item">
+                    <a href="https://beautiqueue.com" class="modal__web">Website</a>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__info_title">Country</p>
+                    <div class="modal__flag">
+                        <img src="img/icons/country-eu.png" alt="country icon" class="modal__country" width="36"
+                            height="36">
+                        <img src="img/icons/country-usa.png" alt="country icon" class="modal__country" width="36"
+                            height="36">
+                    </div>
+                </li>
+                <li class="modal__item">
+                    <p class="modal__info_title">Sector</p>
+                    <p class="modal__sector">E-commerce</p>
+                </li>
+                <li class="modal__item modal__status_mobile">
+                    <p class="modal__status_title">Status</p>
+                    <p class="modal__status_text">StartUp</p>
+                </li>
+            </ul>
+            <div class="modal__status">
+                <p class="modal__status_title">Status</p>
+                <p class="modal__status_text">StartUp</p>
+            </div>
+        </div>
+    </div>
+
     <script defer src="js/menu.js"></script>
+    <script defer src="js/modal.js"></script>
+    <script defer src="js/sectors.js"></script>
 </body>
 
 </html>

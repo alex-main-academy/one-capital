@@ -342,6 +342,15 @@ body {
   margin: 0 auto;
   border: 2px solid rgba(76, 97, 209, 0.16);
   border-radius: 30px;
+  transition-duration: 300ms;
+}
+
+.apply__link_item:hover {
+  background-color: #2E46C2;
+}
+
+.apply__link_item:focus {
+  background-color: #2D3F9D;
 }
 
 @media screen and (max-width: 767px) {
@@ -452,6 +461,11 @@ body {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #B5B3B3;
+  transition-duration: 300ms;
+}
+
+.form__input:focus {
+  border: 3px solid #4C61D1;
 }
 
 .form__text {
@@ -466,6 +480,11 @@ body {
   line-height: 1.44;
   letter-spacing: 0.02em;
   color: #B5B3B3;
+  transition-duration: 300ms;
+}
+
+.form__text:focus {
+  border: 3px solid #4C61D1;
 }
 
 @media screen and (max-width: 767px) {
@@ -486,6 +505,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition-duration: 300ms;
+}
+
+.form__submit:hover {
+  background-color: transparent;
+}
+
+.form__submit:focus {
+  background-color: #2D3F9D;
 }
 
 @media screen and (max-width: 767px) {

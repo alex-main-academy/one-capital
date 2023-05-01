@@ -1,8 +1,9 @@
 const openModalButtons = document.querySelectorAll(".js-open-modal");
+const closeButton = document.querySelectorAll(".js-close-modal");
 const backdropNervous = document.querySelector(".js-backdrop-nervous-academy");
 const backdropLeads = document.querySelector(".js-backdrop-7-leads");
 const backdropOgo = document.querySelector(".js-backdrop-ogo");
-const closeButton = document.querySelectorAll(".js-close-modal");
+const backdropBeauti = document.querySelector(".js-backdrop-beauti");
 const backdropArray = document.querySelectorAll(".js-backdrop");
 
 openModalButtons.forEach((elem) => {
@@ -24,6 +25,13 @@ openModalButtons.forEach((elem) => {
         break;
       case "Ogo Mart":
         backdropOgo.style.cssText = `
+          opacity: 1;
+          visibility: visible;
+        `;
+        document.body.style.overflowY = "hidden";
+        break;
+      case "Beauti Queue":
+        backdropBeauti.style.cssText = `
           opacity: 1;
           visibility: visible;
         `;
