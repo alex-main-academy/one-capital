@@ -6,8 +6,8 @@ const closeButton = document.querySelectorAll(".js-close-modal");
 const backdropArray = document.querySelectorAll(".js-backdrop");
 
 openModalButtons.forEach((elem) => {
-  elem.addEventListener("click", (event) => {
-    switch (event.target.textContent) {
+  elem.addEventListener("click", () => {
+    switch (elem.getAttribute("data-title")) {
       case "Nervous Academy":
         backdropNervous.style.cssText = `
           opacity: 1;
