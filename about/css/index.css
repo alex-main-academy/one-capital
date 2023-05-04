@@ -111,33 +111,26 @@ a {
 }
 
 @font-face {
-  font-family: "Khand";
-  src: url("../fonts/Khand/Khand-Regular.ttf");
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Regular.ttf");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
+
 @font-face {
-  font-family: "Khand";
-  src: url("../fonts/Khand/Khand-Medium.ttf");
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Medium.ttf");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Khand";
-  src: url("../fonts/Khand/Khand-SemiBold.ttf");
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway/Raleway-Regular.ttf");
-  font-weight: 400;
+  src: url("../fonts/Raleway/Raleway-SemiBold.ttf");
+  font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
@@ -146,7 +139,7 @@ a {
   --primary-text-color: #FFFFFF;
   --accent-text-color: #73DEF1;
   --button-back-color: #2E46C2;
-  --primary-font: "Khand";
+  --primary-font: "Raleway";
   --secondary-font: "Rubik";
 }
 
@@ -402,6 +395,12 @@ body {
   margin-top: 41px;
 }
 
+@media screen and (max-width:1110px) {
+  .hero__image {
+    margin-top: 100px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero__image {
     margin-top: 0;
@@ -412,7 +411,7 @@ body {
 .hero__title {
   font-size: 72px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 13px;
 }
 
@@ -746,8 +745,6 @@ body {
 }
 
 .footer__logo {
-  padding-right: 50px;
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
   height: 100%;
   display: flex;
   align-items: center;
@@ -768,7 +765,7 @@ body {
 }
 
 .footer__nav .nav__list {
-  gap: 38px;
+  gap: 22px;
 }
 
 @media screen and (max-width: 1110px) {
@@ -776,6 +773,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 38px;
   }
 }
 
@@ -878,7 +876,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 54px;
+  gap: 40px;
 }
 
 .menu__link {

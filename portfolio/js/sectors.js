@@ -39,6 +39,15 @@ sectorButtons.forEach((elem) => {
         "B2B Marketplace that connects mediabuyers and customers in a single system";
       marketText[1].textContent =
         "More than 7,000 payed partnerships has been made using our platform";
+    } else if (activeElement.getAttribute("data-title") == "Education") {
+      marketText[0].textContent =
+        "System solution for the development of the coolest analysts in digital sphere - Media buyers.";
+      marketText[1].textContent =
+        "The purpose of this project is to attract new specialists and employ them in our investment projects.";
+    } else if (activeElement.getAttribute("data-title") == "E-commerce") {
+      marketText[0].textContent =
+        "Our stores offer more than 1,000 different products for everyday life, which makes them attractive to a wide range of consumers.";
+      marketText[1].textContent = "";
     }
   });
 });
