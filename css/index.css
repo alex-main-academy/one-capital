@@ -111,24 +111,24 @@ a {
 }
 
 @font-face {
-  font-family: "Khand";
-  src: url("../fonts/Khand/Khand-Regular.ttf");
+  font-family: "Raleway";
+  src: url('../fonts/Raleway/Raleway-Regular.ttf');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Khand";
-  src: url("../fonts/Khand/Khand-Medium.ttf");
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Medium.ttf");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Khand";
-  src: url("../fonts/Khand/Khand-SemiBold.ttf");
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-SemiBold.ttf");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
@@ -146,7 +146,7 @@ a {
   --primary-text-color: #FFFFFF;
   --accent-text-color: #73DEF1;
   --button-back-color: #2E46C2;
-  --primary-font: "Khand";
+  --primary-font: "Raleway";
   --secondary-font: "Rubik";
 }
 
@@ -395,18 +395,27 @@ body {
   margin-top: 41px;
 }
 
+@media screen and (max-width:1110px) {
+  .hero__image {
+    width: 250px;
+    height: 300px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero__image {
     margin-top: 0;
     max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
 .hero__title {
   font-size: 72px;
   line-height: 1;
-  font-weight: 400;
-  margin-bottom: 13px;
+  font-weight: 600;
+  margin-bottom: 33px;
 }
 
 @media screen and (max-width: 1110px) {
@@ -419,6 +428,7 @@ body {
   .hero__title {
     font-size: 64px;
     margin-bottom: 18px;
+    max-width: 286px;
   }
 }
 
@@ -430,7 +440,7 @@ body {
   content: "";
   position: absolute;
   z-index: -1;
-  bottom: 29px;
+  bottom: 0px;
   left: 0;
   width: 100%;
   height: 10px;
@@ -439,22 +449,20 @@ body {
 
 @media screen and (max-width: 1110px) {
   .hero__title span::before {
-    bottom: 20px;
     height: 7px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .hero__title span::before {
-    height: 10px;
-    bottom: 22px;
+    display: none;
   }
 }
 
 .hero__desc {
   font-size: 32px;
   line-height: 1.28;
-  max-width: 474px;
+  max-width: 554px;
 }
 
 .hero__desc_second {
@@ -502,11 +510,13 @@ body {
 }
 
 .priority__title {
-  padding: 147px 238px 218px 0;
+  padding: 147px 151px 218px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.06);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 52px;
   line-height: 1.23;
+  width: 321px;
+  box-sizing: content-box;
 }
 
 @media screen and (max-width: 1110px) {
@@ -534,14 +544,16 @@ body {
 
 @media screen and (max-width: 1110px) {
   .priority__desc {
-    padding-left: 0;
+    padding-left: 30px;
     margin-left: auto;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .priority__desc {
     gap: 20px;
+    padding-left: 0;
   }
 }
 
@@ -608,7 +620,7 @@ body {
 }
 
 .ticket__title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 52px;
   line-height: 1.23;
   text-align: center;
@@ -623,7 +635,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .ticket__title {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1;
     margin-bottom: 40px;
   }
@@ -666,13 +678,13 @@ body {
 
 @media screen and (max-width: 1110px) {
   .ticket__text {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .ticket__text {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
@@ -686,6 +698,12 @@ body {
 @media screen and (max-width: 1110px) {
   .ticket__text span {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ticket__text span {
+    font-size: 16px;
   }
 }
 
@@ -724,7 +742,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 54px;
-  padding-right: 99px;
+  padding-right: 50px;
   width: 330px;
 }
 
@@ -732,7 +750,7 @@ body {
   .portfolio__item:nth-child(1) {
     width: 250px;
     padding-bottom: 30px;
-    padding-right: 50px;
+    padding-right: 20px;
   }
 }
 
@@ -950,6 +968,7 @@ body {
 @media screen and (max-width: 1110px) {
   .ticket__subtitle {
     font-size: 35px;
+    margin-top: 20px;
   }
 }
 
@@ -1015,7 +1034,7 @@ body {
 }
 
 .team__title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 42px;
   line-height: 1;
   text-align: center;
@@ -1088,8 +1107,6 @@ body {
 }
 
 .footer__logo {
-  padding-right: 50px;
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
   height: 100%;
   display: flex;
   align-items: center;
@@ -1110,7 +1127,7 @@ body {
 }
 
 .footer__nav .nav__list {
-  gap: 38px;
+  gap: 22px;
 }
 
 @media screen and (max-width: 1110px) {
@@ -1118,6 +1135,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 38px;
   }
 }
 
@@ -1432,7 +1450,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 54px;
+  gap: 40px;
+}
+
+.menu__lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .menu__link {
