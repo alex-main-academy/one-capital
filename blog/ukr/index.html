@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Про нас</title>
+    <title>Блог</title>
     <link rel="shortcut icon" type="image/x-icon" href="">
     <link rel="icon" sizes="any" type="image/svg+xml" href="">
     <link rel="stylesheet" href="index.css">
@@ -17,7 +17,7 @@
             <button class="header__menu js-menu-open">
                 <img src="../img/icons/burger.svg" alt="burger" width="32" height="32">
             </button>
-            <a href="../index.html" class="header__logo">
+            <a class="header__logo">
                 <img src="../img/section/header/logo.svg" alt="logo" width="164" height="29">
             </a>
             <nav class="header__nav nav">
@@ -26,7 +26,7 @@
                         <a href="../../ukr/index.html" class="nav__link">Головна</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link active">Про нас</a>
+                        <a href="../../about/ukr/index.html" class="nav__link">Про нас</a>
                     </li>
                     <li class="nav__item">
                         <a href="../../portfolio/urk/index.html" class="nav__link">Портфоліо</a>
@@ -35,7 +35,7 @@
                         <a href="../../apply/ukr/index.html" class="nav__link">Подати заявку</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../../blog/ukr/index.html" class="nav__link">Блог</a>
+                        <a class="nav__link active">Блог</a>
                     </li>
                 </ul>
             </nav>
@@ -50,85 +50,57 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="blog">
+            <h1 class="blog__title">Блог</h1>
+            <div class="blog__line"></div>
             <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Про нас</h1>
-                    <p class="hero__desc">OneCapital – приватний інвестиційний фонд з України. Ми об'єднуємо спільні
-                        активи інвесторів і засновників найбільших українських компаній у різних сферах бізнесу.</p>
-                </div>
-                <img src="../img/section/hero/bg.webp" alt="people" class="hero__image" width="329" height="373">
-            </div>
-        </section>
-
-        <section class="exp">
-            <div class="container">
-                <h2 class="exp__title">Ми маємо великий досвід роботи з проектами в наступних сферах</h2>
-                <ul class="exp__list">
-                    <li class="exp__item">
-                        <img src="../img/icons/it.svg" alt="IT" width="44" height="44" class="exp__icon">
-                        <h3 class="exp__subtitle">IT</h3>
+                <ul class="blog__list">
+                    <li class="blog__item">
+                        <a href="#" class="blog__link">
+                            <p class="blog__date">15/03/23 </p>
+                            <img src="../img/section/blog/img1.webp" alt="" class="blog__image" width="268"
+                                height="198">
+                            <h3 class="blog__subtitle">Пітч-дек та презентація</h3>
+                            <p class="blog__desc">Хороший Пітч-дек - перший крок до отримання інвестицій!
+                                Пітч-дек - це презентація компанії, яка допомагає потенційним інвесторам дізнатися
+                                більше про ваш бізнес.
+                                Це може прозвучати дивно, але головна мета пітч-деку не в тому, щоб отримати
+                                фінансування, а в тому, щоб дійти наступної зустрічі.
+                            </p>
+                        </a>
                     </li>
-                    <li class="exp__item">
-                        <img src="../img/icons/marketing.svg" alt="Affiliate Marketing" width="44" height="44"
-                            class="exp__icon">
-                        <h3 class="exp__subtitle">Affiliate Marketing </h3>
+                    <li class="blog__item">
+                        <a href="#" class="blog__link">
+                            <p class="blog__date">25/04/23</p>
+                            <img src="../img/section/blog/img2.webp" alt="" class="blog__image" width="268"
+                                height="198">
+                            <h3 class="blog__subtitle">Тиждень Медіабаєра</h3>
+                            <p class="blog__desc">Безкоштовний тиждень професії медіабайєра стартує 10 травня, але ми
+                                для тебе вже підготували бонусні уроки по роботі зі штучним інтелектом 🤖
+                            </p>
+                        </a>
                     </li>
-                    <li class="exp__item">
-                        <img src="../img/icons/e-commerce.svg" alt="E-Commerce" width="44" height="44"
-                            class="exp__icon">
-                        <h3 class="exp__subtitle">E -Commerce </h3>
+                    <li class="blog__item">
+                        <a href="#" class="blog__link">
+                            <p class="blog__date">17/04/23</p>
+                            <img src="../img/section/blog/img3.webp" alt="" class="blog__image" width="268"
+                                height="198">
+                            <h3 class="blog__subtitle">Nervous Воркшоп</h3>
+                            <p class="blog__desc">🗓️5 травня о 18:00 за київським часом відбудеться безкоштовний
+                                воркшоп з Медіабаїнгу. Учасники зможуть відкрити для себе основи Медіабаїнгу.</p>
+                        </a>
                     </li>
-                    <li class="exp__item">
-                        <img src="../img/icons/real-estate.svg" alt="Real estate" width="44" height="44"
-                            class="exp__icon">
-                        <h3 class="exp__subtitle">Real estate</h3>
+                    <li class="blog__item">
+                        <a href="#" class="blog__link">
+                            <p class="blog__date">03/04/23 </p>
+                            <img src="../img/section/blog/img4.webp" alt="" class="blog__image" width="268"
+                                height="198">
+                            <h3 class="blog__subtitle">CPA Платформа 7Leads</h3>
+                            <p class="blog__desc">Наша платформа тепер інтегрована з трекером Кeitaro, створеним для
+                                роботи з трафіком.</p>
+                        </a>
                     </li>
                 </ul>
-            </div>
-        </section>
-
-        <section class="looking">
-            <div class="container">
-                <h2 class="looking__title">Кого ми шукаємо <span>Проекти, які:</span></h2>
-                <ul class="looking__list">
-                    <li class="looking__item">
-                        <p class="looking__desk">Мають стабільну бізнес-модель</p>
-                    </li>
-                    <li class="looking__item">
-                        <p class="looking__desk">Хочуть розширюватися та розвиватись</p>
-                    </li>
-                    <li class="looking__item">
-                        <p class="looking__desk">Мають позитивну динаміку фінансових результатів</p>
-                    </li>
-                    <li class="looking__item">
-                        <p class="looking__desk">Шукають капітал та інвестора, який може допомогти проекту в його
-                            розвитку</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="offer">
-            <div class="container">
-                <img src="../img/section/offer/men.webp" alt="men" width="254" height="282" class="offer__image">
-                <div class="offer__content">
-                    <h2 class="offer__title">Ми пропонуємо</h2>
-                    <ul class="offer__list">
-                        <li class="offer__item">
-                            <p class="offer__text">Експертизу в галузі аналітики та менеджменту</p>
-                        </li>
-                        <li class="offer__item">
-                            <p class="offer__text">Технічна та експлуатаційна підтримка</p>
-                        </li>
-                        <li class="offer__item">
-                            <p class="offer__text">Залучити кошти у ваш проект</p>
-                        </li>
-                        <li class="offer__item">
-                            <p class="offer__text">Експертиза в маркетингу та просуванні</p>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </section>
     </main>
@@ -141,7 +113,7 @@
                         <a href="../../ukr/index.html" class="nav__link">Головна</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link active">Про нас</a>
+                        <a href="../../about/ukr/index.html" class="nav__link">Про нас</a>
                     </li>
                     <li class="nav__item">
                         <a href="../../portfolio/urk/index.html" class="nav__link">Портфоліо</a>
@@ -150,10 +122,10 @@
                         <a href="../../apply/ukr/index.html" class="nav__link">Подати заявку</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../../blog/ukr/index.html" class="nav__link">Блог</a>
+                        <a class="nav__link active">Блог</a>
                     </li>
                     <li class="nav__item">
-                        <a href="mailto:info@onecapital.com.ua"
+                        <a href="mailto:info@onecapital.com.ua" target="_blank"
                             class="nav__link nav__link_email">info@onecapital.com.ua</a>
                     </li>
                 </ul>
@@ -181,8 +153,8 @@
             <p class="footer__copy">©️OneCapital</p>
         </div>
         <div class="footer__mobile">
-            <a href="../index.html" class="footer__logo">
-                <img src="../img/section/footer/logo.svg" alt="logo" width="164" height="29">
+            <a class="footer__logo">
+                <img src="../img/section/footer/logo.svg" alt="logo" width="145" height="27">
             </a>
             <nav class="footer__nav nav">
                 <ul class="nav__list">
@@ -190,7 +162,7 @@
                         <a href="../../ukr/index.html" class="nav__link">Головна</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link active">Про нас</a>
+                        <a href="../../about/ukr/index.html" class="nav__link">Про нас</a>
                     </li>
                     <li class="nav__item">
                         <a href="../../portfolio/urk/index.html" class="nav__link">Портфоліо</a>
@@ -199,10 +171,10 @@
                         <a href="../../apply/ukr/index.html" class="nav__link">Подати заявку</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../../blog/ukr/index.html" class="nav__link">Блог</a>
+                        <a class="nav__link active">Блог</a>
                     </li>
                     <li class="nav__item">
-                        <a href="mailto:info@onecapital.com.ua"
+                        <a href="mailto:info@onecapital.com.ua" target="_blank"
                             class="nav__link nav__link_email">info@onecapital.com.ua</a>
                     </li>
                 </ul>
@@ -242,10 +214,10 @@
         </div>
         <ul class="menu__list">
             <li class="menu__item">
-                <a href="../../ukr/index.html" class="menu__link">Головна</a>
+                <a href="../../ukr/index.html" class="menu__link ">Головна</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link active">Про нас</a>
+                <a href="../../about/ukr/index.html" class="menu__link">Про нас</a>
             </li>
             <li class="menu__item">
                 <a href="../../portfolio/urk/index.html" class="menu__link">Портфоліо</a>
@@ -254,10 +226,10 @@
                 <a href="../../apply/ukr/index.html" class="menu__link">Подати заявку</a>
             </li>
             <li class="menu__item">
-                <a href="../../blog/ukr/index.html" class="menu__link">Блог</a>
+                <a class="menu__link active">Блог</a>
             </li>
-            <li class="menu__item">
-                <a href="../index.html" class="menu__link">EN</a>
+            <li class="menu__item menu__item_lang">
+                <a href="../index.html" class="menu__link menu__lang">EN</a>
             </li>
         </ul>
         <ul class="menu__social">
@@ -284,3 +256,5 @@
 
     <script defer src="../js/menu.js"></script>
 </body>
+
+</html>

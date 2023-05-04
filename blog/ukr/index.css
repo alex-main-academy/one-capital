@@ -553,7 +553,7 @@ body {
 }
 
 .footer__nav .nav__list {
-    gap: 22px;
+    gap: 38px;
 }
 
 @media screen and (max-width: 1110px) {
