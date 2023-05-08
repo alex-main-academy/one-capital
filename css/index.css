@@ -560,6 +560,7 @@ body {
 }
 
 .priority__number {
+  transition-duration: 500ms;
   top: 0;
   display: inline-block;
   font-family: var(--secondary-font);
