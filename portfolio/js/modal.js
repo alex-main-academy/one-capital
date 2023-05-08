@@ -4,6 +4,7 @@ const backdropNervous = document.querySelector(".js-backdrop-nervous-academy");
 const backdropLeads = document.querySelector(".js-backdrop-7-leads");
 const backdropOgo = document.querySelector(".js-backdrop-ogo");
 const backdropBeauti = document.querySelector(".js-backdrop-beauti");
+const backdropLeadsCpa = document.querySelector(".js-backdrop-7-leads-cpa");
 const backdropArray = document.querySelectorAll(".js-backdrop");
 
 openModalButtons.forEach((elem) => {
@@ -18,6 +19,13 @@ openModalButtons.forEach((elem) => {
         break;
       case "7 Leads":
         backdropLeads.style.cssText = `
+          opacity: 1;
+          visibility: visible;
+        `;
+        document.body.style.overflowY = "hidden";
+        break;
+      case "7 Leads cpa":
+        backdropLeadsCpa.style.cssText = `
           opacity: 1;
           visibility: visible;
         `;

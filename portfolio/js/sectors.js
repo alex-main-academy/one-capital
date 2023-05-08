@@ -31,14 +31,14 @@ sectorButtons.forEach((elem) => {
 
     if (activeElement.getAttribute("data-title") == "Affiliate Marketing") {
       marketText[0].textContent =
-        "We generate clients for private companies in the US and European markets";
+        "We generate clients for private companies in US and European markets. ";
       marketText[1].textContent =
         "Since the beginning of Covid-19, the department is growing and expanding the team.";
     } else if (activeElement.getAttribute("data-title") == "CPA") {
       marketText[0].textContent =
         "B2B Marketplace that connects mediabuyers and customers in a single system";
       marketText[1].textContent =
-        "More than 7,000 payed partnerships has been made using our platform";
+        "More than 7,000 payed partnerships made by using our platform";
     } else if (activeElement.getAttribute("data-title") == "Education") {
       marketText[0].textContent =
         "System solution for the development of the coolest analysts in digital sphere - Media buyers.";
@@ -49,5 +49,22 @@ sectorButtons.forEach((elem) => {
         "Our stores offer more than 1,000 different products for everyday life, which makes them attractive to a wide range of consumers.";
       marketText[1].textContent = "";
     }
+  });
+});
+
+// filter
+const sectorButtonsArray = document.querySelectorAll(".js-sectors-button");
+const marketList = document.querySelector(".js-market-list");
+sectorButtonsArray.forEach((button) => {
+  button.addEventListener("click", () => {
+    const sectorType = button.getAttribute("data-title");
+    const marketItems = marketList.querySelectorAll(".js-market-item");
+    marketItems.forEach((item) => {
+      if (item.getAttribute("data-title") === sectorType) {
+        item.style.display = "flex";
+      } else {
+        item.style.display = "none";
+      }
+    });
   });
 });

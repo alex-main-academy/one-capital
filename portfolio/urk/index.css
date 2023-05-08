@@ -815,6 +815,7 @@ body {
 .market__list {
   display: flex;
   gap: 23px;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1110px) {
@@ -830,7 +831,7 @@ body {
 }
 
 .market__item {
-  width: 100%;
+  width: calc((100% - 69px) / 4);
   background: rgba(255, 255, 255, 0.01);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
