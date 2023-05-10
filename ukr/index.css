@@ -491,7 +491,7 @@ body {
   }
 
   .hero__desc_second {
-    display: none;
+    font-size: 26px;
   }
 }
 
@@ -837,6 +837,21 @@ body {
 @media screen and (max-width: 767px) {
   .portfolio__title {
     display: none;
+  }
+}
+
+.portfolio__title_mob {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__title_mob {
+    display: block;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 31px;
   }
 }
 
