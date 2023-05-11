@@ -27,6 +27,7 @@ section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol,
@@ -497,6 +498,7 @@ body {
 @media screen and (max-width: 767px) {
   .priority {
     padding: 40px 0 50px 0;
+    height: 750px;
   }
 }
 
@@ -520,6 +522,18 @@ body {
   left: 45%;
 }
 
+@media screen and (max-width:1110px) {
+  .priority__border {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .priority__border {
+    display: none;
+  }
+}
+
 .priority__title {
   font-weight: 600;
   font-size: 52px;
@@ -534,17 +548,20 @@ body {
 
 @media screen and (max-width: 1110px) {
   .priority__title {
-    padding: 90px 40px 150px 0;
-    font-size: 45px;
+    padding-right: 0;
+    font-size: 40px;
+    width: 350px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .priority__title {
+    position: relative;
+    top: 0;
     border-right: none;
-    padding: 0 0 50px 0;
     font-size: 48px;
     font-weight: 500;
+    width: auto;
   }
 }
 
@@ -563,8 +580,9 @@ body {
 
 @media screen and (max-width: 1110px) {
   .priority__desc {
-    padding-left: 30px;
+    padding-left: 60px;
     margin-left: auto;
+    height: 640px;
     width: 100%;
   }
 }
@@ -573,6 +591,8 @@ body {
   .priority__desc {
     gap: 20px;
     padding-left: 0;
+    padding-top: 50px;
+    height: auto;
   }
 }
 
@@ -594,10 +614,19 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 1110px) {
+  .priority__number {
+    width: 60px;
+    height: 56px;
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .priority__number {
-    font-size: 44px;
-    padding: 13.5px 10px;
+    top: 100px;
+    font-size: 40px;
+    width: 75px;
   }
 }
 
@@ -610,8 +639,9 @@ body {
 
 @media screen and (max-width: 767px) {
   .priority__list {
-    gap: 20px;
+    gap: 80px;
     margin-top: 20px;
+    height: auto;
   }
 }
 
@@ -625,26 +655,52 @@ body {
 
 .priority__text_first {
   transition-duration: 500ms;
-  transform: translate(100px);
+  transform: translate(30px);
   opacity: 0;
 }
 
 .priority__text_second {
   transition-duration: 500ms;
-  transform: translate(100px);
+  transform: translate(30px);
   opacity: 0;
 }
 
 .priority__text_third {
   transition-duration: 500ms;
-  transform: translate(100px);
+  transform: translate(30px);
   opacity: 0;
 }
 
 .priority__text_fourth {
   transition-duration: 500ms;
-  transform: translate(100px);
+  transform: translate(30px);
   opacity: 0;
+}
+
+@media screen and (max-width:767px) {
+  .priority__text_first {
+    transition-duration: 500ms;
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  .priority__text_second {
+    transition-duration: 500ms;
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  .priority__text_third {
+    transition-duration: 500ms;
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  .priority__text_fourth {
+    transition-duration: 500ms;
+    transform: translate(0);
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1110px) {
