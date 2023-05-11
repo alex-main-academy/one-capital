@@ -132,13 +132,13 @@ window.addEventListener("scroll", () => {
       `;
     }
   } else if (window.outerWidth <= 767) {
-    if (scrollPosition < 1170) {
+    if (scrollPosition < 1340) {
       priorityNumber.innerHTML = "01";
-    } else if (scrollPosition > 1171 && scrollPosition < 1300) {
+    } else if (scrollPosition > 1341 && scrollPosition < 1450) {
       priorityNumber.innerHTML = "02";
-    } else if (scrollPosition > 1301 && scrollPosition < 1420) {
+    } else if (scrollPosition > 1451 && scrollPosition < 1590) {
       priorityNumber.innerHTML = "03";
-    } else if (scrollPosition > 1421) {
+    } else if (scrollPosition > 1591) {
       priorityNumber.innerHTML = "04";
     }
 
@@ -157,19 +157,19 @@ window.addEventListener("scroll", () => {
       `;
     }
 
-    if (scrollPosition > 800 && scrollPosition < 1100) {
+    if (scrollPosition > 950 && scrollPosition < 1250) {
       priorityTextFirst.style.cssText = `
         opacity: 1;
       `;
-    } else if (scrollPosition > 1101 && scrollPosition < 1250) {
+    } else if (scrollPosition > 1251 && scrollPosition < 1350) {
       priorityTextSecond.style.cssText = `
         opacity: 1;
       `;
-    } else if (scrollPosition > 1251 && scrollPosition < 1400) {
+    } else if (scrollPosition > 1351 && scrollPosition < 1450) {
       priorityTextThird.style.cssText = `
         opacity: 1;
       `;
-    } else if (scrollPosition > 1401) {
+    } else if (scrollPosition > 1451) {
       priorityTextFourth.style.cssText = `
         opacity: 1;
       `;
